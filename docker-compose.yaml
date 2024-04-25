@@ -1,0 +1,14 @@
+---
+
+version: '3'
+
+services:
+  flask-server:
+    build:
+      context: ./server/
+      dockerfile: Dockerfile
+    image: kelach/lenet5a_model:1.0
+    ports:
+      - "5000:5000"
+  client:
+    build
