@@ -4,7 +4,9 @@ import { useForm } from "@mantine/form";
 import './App.css'
 
 interface ConversationProps{
-
+  message: string;
+  answer: string;
+  timestamp: Date;
 }
 
 
@@ -20,6 +22,7 @@ function App() {
     },
   });
   const onSubmitHandler = (values: FormData) => {
+    console.log(values);
     // make request to backend to generate response
   }
   const [query, setQuery] = useState('');
