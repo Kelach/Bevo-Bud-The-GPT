@@ -12,4 +12,4 @@ COPY *.html /app/
 
 WORKDIR /app
 RUN npm install
-CMD ["npm","run", "dev", "--", "--port", "3000", "&"]
+CMD ["npm","run", "dev", "--", "--port", "3000"]
