@@ -9,6 +9,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
+  
   client:
     depends_on:
       - server
@@ -17,4 +18,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    volumes:
+      - ./client/src:/app/src
   
