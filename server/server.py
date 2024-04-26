@@ -11,11 +11,11 @@ model = PeftModel.from_pretrained(model, "Kelechie/Bevo-Budv1.0")
 # model_checkpoint = "distilgpt2"
 # tokenizer = AutoTokenizer.from_pretrained(model_checkpoint, use_fast=True)
 generator = pipeline(model="Kelechie/Bevo-Budv1.0")
-generator("Do you have any advice for off campus housing?")
+
 app = Flask(__name__)
 
 # load model and make a request using pipline
-@app.route("/question:id", methods=["POST", "DELETE"])
+@app.route("/question", methods=["POST", "DELETE"])
 def question():
     """
     Handles message queries
@@ -23,8 +23,7 @@ def question():
     - requires question id for question deletion
     - returns inference text response or boolean if conversation is deleted
     """
-    x = 0
-    pass
+    return generator("What are some easy electives to take?")
     
 # make a request to redis and delete question
 @app.route("/db", methods=["DELETE"])
@@ -45,4 +44,5 @@ def home():
 # return info about model
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)
+    
