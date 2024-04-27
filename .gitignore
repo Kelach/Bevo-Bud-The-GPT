@@ -1,4 +1,5 @@
-/data
+/model-src
+/server/data
 
 # Logs
 logs
