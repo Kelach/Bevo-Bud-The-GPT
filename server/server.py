@@ -51,7 +51,7 @@ def question():
         conversation = {
             "question": question,
             "answer": answer[0]["generated_text"],
-            "timestamp": time.now(),
+            "timestamp": time.now().timestamp(),
             "id": db.incr("count")
         }
         print(conversation)
@@ -87,6 +87,11 @@ def conversation():
             return jsonify({"error": "Conversation not found"}), 404
 
     elif request.method == "DELETE":
+        if request.args.get("all", False):
+            # delete all conversations from redis db
+            deleted = db.flushdb()
+            return jsonify({"success": deleted}), 200
+        
         id = request.args.get("id", None)
         if id is None:
             return jsonify({"error": "id is required"}), 400
@@ -94,13 +99,6 @@ def conversation():
         deleted = db.delete(id)
         return jsonify({"success": deleted}), 200
     
-# make a request to redis and delete question
-@app.route("/db", methods=["DELETE"])
-def clear_db():
-    # delete all conversations from redis db
-    deleted = db.flushdb()
-    return jsonify({"success": deleted}), 200
-
 # make a request to redis and delete db
 @app.route("/info", methods=["GET"])
 def info():
