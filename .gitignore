@@ -1,4 +1,7 @@
 /server/data
+*.json
+*.csv
+*.txt
 
 # Logs
 logs
