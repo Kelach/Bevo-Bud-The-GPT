@@ -2,6 +2,7 @@
 *.json
 *.csv
 *.txt
+model-src/model/
 
 # Logs
 logs
