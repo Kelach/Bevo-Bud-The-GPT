@@ -39,9 +39,9 @@ You can easily start this application on your local machine by following the ste
     - `Note:` This step may take a while
 
     ```bash
-    docker-compose up
+    docker-compose up -d
     ```
-    - 'Note:' Prepend `-d --build` at the end of this command if you want to also build the image
+    - 'Note:' Prepend `--build` at the end of this command if you want to also build the image.
 4. And that's it! Now you can access the application by visiting `http://localhost:3000` in your browser.
 
      - `Additional Notes`:
