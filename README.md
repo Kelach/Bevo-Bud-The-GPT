@@ -19,7 +19,7 @@ Current and prospective students at UT Austin often struggle to find specific in
 
 ## Installation
 You can easily start this application on your local machine by following the steps below:
-    - `Note:` You will need to have Docker installed to run this project locally.
+- `Note:` You will need to have Docker installed to run this project locally.
 
 1. To run this application, first clone the repository
     
@@ -61,4 +61,4 @@ Requests supported to the inference server:
 | 1 | `/`   | GET | Info regarding the model |
 | 2 | `/info` | GET | Metadata regarding the model |
 | 3 | `/question` | POST | Inference response to message query |
-| 4 | `/conversations` | GET, DELETE | Handles conversation queries from Redis database |
+| 4 | `/conversations` | GET, DELETE | Stored conversation queries from Redis database |
