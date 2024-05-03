@@ -22,7 +22,7 @@ Current and prospective students at UT Austin often struggle to find specific in
 
 ## Installation
 You can easily start this application on your local machine by following the steps below:
-- `Note:` You will need to have the latest version of Docker installed and at 8GB of storage to run this project locally.
+- `Note:` You will need to have the latest version of Docker installed and at 8GB of storage to run this project locally. This application also uses ports 3000 (client) and 5000 (server). 
 
 1. To run this application, first clone the repository
     
