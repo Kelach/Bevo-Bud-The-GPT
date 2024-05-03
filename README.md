@@ -32,7 +32,7 @@ You can easily start this application on your local machine by following the ste
     ```bash
     cd Bevo-Bud-The-GPT
     ```
-3. run the following docker-compose command to start the application!
+3. Run the following docker-compose command to start the application!
     - `Note:` This step may take a while
 
     ```bash
@@ -60,5 +60,5 @@ Requests supported to the inference server:
 | - | ----- | ------ | ------- |
 | 1 | `/`   | GET | Info regarding the model |
 | 2 | `/info` | GET | Metadata regarding the model |
-| 3 | `/quesiton` | POST | Inference response to message query |
+| 3 | `/question` | POST | Inference response to message query |
 | 4 | `/conversations` | GET, DELETE | Handles conversation queries from Redis database |
