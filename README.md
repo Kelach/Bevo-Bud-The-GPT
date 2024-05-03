@@ -3,9 +3,8 @@ Current and prospective students at UT Austin often struggle to find specific in
 
 **Bevo Bud The GPT** is a full-stack web application where users can ask UT-related questions and get answers from the AI chatbot. Bevo Bud, the AI chatbot, was fined-tuned on archived reddit posts from the the r/UTAustin subreddit (see the [model-src](./model-src/) folder to learn more its development).
 
-### LOOM VIDEO
-https://www.loom.com/share/76c302b123f44e11b74c200f7db20858?sid=a3a5b9d7-2862-487e-acd8-480c4e0e54d9
-https://www.loom.com/share/cb4e2939900242b7bb53ca01d86abb6d?sid=8e2f3fb1-9388-4338-92c8-c1ec96142b39
+### Demo
+[Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 ## Technologies Used
 - Frontend
