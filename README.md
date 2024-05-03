@@ -1,7 +1,7 @@
 ## Table of Contents
 - [Introduction](#Bevo-Bud-The-GPT)
 - [Demo](#demo)
-- [Scripts](#scripts)
+- [File Structure](#file-structure)
 - [Technologies Used](#technologies-used)
 - [Installation Guide](#installation-guide)
 - [Usage](#usage)
@@ -14,6 +14,43 @@ Current and prospective students at UT Austin often struggle to find specific in
 
 ### Demo
 ![Demo](https://github.com/Kelach/Bevo-Bud-The-GPT/blob/main/Demo.gif)
+
+## File Structure
+
+```
+
+├── COE379_Project_4_Report.pdf
+├── Demo.gif
+├── Project Proposal.pdf
+├── README.md
+├── client
+│   ├── Dockerfile
+│   ├── docker-compose.yaml
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── pnpm-lock.yaml
+│   ├── public
+│   │   └── bevo.png
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   └── *and others
+│   └── *and others
+├── docker-compose.yaml
+├── model-src
+│   ├── previewing.ipynb
+│   ├── processing.ipynb
+│   └── finetuning.ipynb
+├── requirements.txt
+├── server
+│   ├── Dockerfile
+│   ├── data
+│   │   └── dump.rdb
+│   ├── docker-compose.yaml
+│   └── server.py
+
+```
 
 ## Technologies Used
 - Frontend
