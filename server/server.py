@@ -104,7 +104,15 @@ def conversation():
 def info():
     # return model meta data in a dynamic way (maybe just return model card)
     # this includes # of trainable parameters + more
-    return jsonify({"model": model.config}), 200 #???????????
+    return jsonify({
+        "model": "Bevo-Bud GPT",
+        "version": "1.0",
+        "base_model": "distilbert/distilgpt2",
+        "parameters": model.num_parameters(),
+        "description": "Bevo-Bud GPT is a fine-tuned GPT-2 model for generating conversational responses.",
+        "huggingface_hub_link": "https://huggingface.co/Kelechie/Bevo-Budv1.0"
+        
+    }), 200 #
 
 @app.route("/", methods=["GET"])
 def home():
