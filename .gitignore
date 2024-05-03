@@ -1,5 +1,11 @@
-/model-src
 /server/data
+*.json
+*.csv
+*.txt
+*.bin
+events.out.*
+*.safetensors
+model-src/model/
 
 # Logs
 logs
