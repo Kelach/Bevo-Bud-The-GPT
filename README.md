@@ -54,14 +54,11 @@ You can easily start this application on your local machine by following the ste
             ```
         - You only need to run the `docker-compose up ...` command with the `--build` flag **once** as the image will. After that, you can re-run `docker-compose up` without the `--build` flag to start the application.
 
-## Example usage:
-Below are some examples and a comparison of the response you can expect to recieve from the fine-tuned v.s. base LLM response.
-
-    | Question | Fine-Tuned LLM Response | Base LLM Response |
-    |----------|--------------------|------------------------|
-
-    | question-here* | Fine-tuned response here* | Non-fine-tuned response here* |
-    | question-here* | Fine-tuned response here* | Non-fine-tuned response here* |
-    | question-here* | Fine-tuned response here* | Non-fine-tuned response here* |
-    | question-here* | Fine-tuned response here* | Non-fine-tuned response here* |
-    | question-here* | Fine-tuned response here* | Non-fine-tuned response here* |
+## Usage:
+Requests supported to the inference server:
+|   | Route | Method | Returns |
+| - | ----- | ------ | ------- |
+| 1 | `/`   | GET | Info regarding the model |
+| 2 | `/info` | GET | Metadata regarding the model |
+| 3 | `/quesiton` | POST | Inference response to message query |
+| 4 | `/conversations` | GET, DELETE | Handles conversation queries from Redis database |
