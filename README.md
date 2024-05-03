@@ -22,7 +22,7 @@ Current and prospective students at UT Austin often struggle to find specific in
 
 ## Installation
 You can easily start this application on your local machine by following the steps below:
-- `Note:` You will need to have the latest version of Docker installed and at 8GB of storage to run this project locally.
+- `Note:` You will need to have the latest version of Docker installed and at 8GB of storage to run this project locally. This application also uses ports 3000 (client) and 5000 (server). 
 
 1. To run this application, first clone the repository
     
@@ -39,9 +39,9 @@ You can easily start this application on your local machine by following the ste
     - `Note:` This step may take a while
 
     ```bash
-    docker-compose up
+    docker-compose up -d
     ```
-    - 'Note:' Prepend `-d --build` at the end of this command if you want to also build the image
+    - 'Note:' Prepend `--build` at the end of this command if you want to also build the image.
 4. And that's it! Now you can access the application by visiting `http://localhost:3000` in your browser.
 
      - `Additional Notes`:
