@@ -17,9 +17,9 @@ services:
     depends_on:
       - redis-db
     image: kelach/bevo-bud-the-gpt_server:1.0
-    build:
-      context: ./server/
-      dockerfile: Dockerfile
+    # build:
+    #   context: ./server/
+    #   dockerfile: Dockerfile
     ports:
       - "5000:5000"
   
@@ -28,9 +28,9 @@ services:
     depends_on:
       - server
     image: kelach/bevo-bud-the-gpt_client:1.0
-    build:
-      context: ./client/
-      dockerfile: Dockerfile
+    # build:
+    #   context: ./client/
+    #   dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
