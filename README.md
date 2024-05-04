@@ -5,7 +5,6 @@
 - [Technologies Used](#technologies-used)
 - [Installation Guide](#installation-guide)
 - [Usage](#usage)
-  - [Supported Requests](#supported-requests)
 
 # Bevo-Bud-The-GPT
 Current and prospective students at UT Austin often struggle to find specific information efficiently through traditional university resources, such as the website or official channels. Bevo Bud The GPT aims to easily solve this issue by empowering students with the information they need seamlessly.
